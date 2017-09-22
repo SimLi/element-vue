@@ -9,7 +9,7 @@
                     <span v-if="toggleIconShow(scope.row)" @click="toggle(scope.$index)">
                             <i v-if="!scope.row.treeExpanded" class="el-tree-node__expand-icon" aria-hidden="true"></i>
                             <i v-if="scope.row.treeExpanded" class="el-tree-node__expand-icon expanded" aria-hidden="true"></i>
-                        </span>
+                    </span>
                     {{ scope.row.projectPlanName }}
                 </template>
             </el-table-column>
@@ -22,19 +22,6 @@
                              :show-overflow-tooltip="true" align="center" >
             </el-table-column>
         </el-table>
-        <p>
-            <span class="el-icon-fa-5x" >
-               dddd
-            </span>
-            <el-input icon="fa-address-book" style="width: 200px"></el-input>
-            <el-button type="primary" size="large" icon="fa-hand-o-right">大型按钮</el-button>
-            <el-button type="primary" icon="fa-hand-o-right">正常按钮</el-button>
-        </p>
-        <i class="el-icon-fa-hand-o-right el-icon-fa-lg"></i>
-        <i class="el-icon-fa-hand-o-right el-icon-fa-2x"></i>
-        <i class="el-icon-fa-hand-o-right el-icon-fa-3x"></i>
-        <i class="el-icon-fa-hand-o-right el-icon-fa-4x"></i>
-        <i class="el-icon-fa-hand-o-right el-icon-fa-5x"></i>
   </div>
 </template>
 
